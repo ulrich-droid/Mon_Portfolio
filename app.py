@@ -5,7 +5,7 @@ from src.ui.components import render_contact, render_footer, render_hero, render
 from src.ui.styles import get_custom_css
 
 st.set_page_config(
-    page_title="Portfolio | IA & Big Data",
+    page_title="Portfolio | Ulrich AREGBA-TISSOU",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
