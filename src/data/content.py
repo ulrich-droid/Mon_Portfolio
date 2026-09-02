@@ -11,10 +11,10 @@ PROFILE = {
     "title": "Étudiant en Master IA & Big Data",
     "location": "Lomé, Togo",
     "summary": (
-        "Spécialisé dans la conception d'architectures de données robustes et "
-        "le développement de modèles d'intelligence artificielle. "
-        "Mon approche allie l'ingénierie Big Data et l'application de solutions "
-        "Deep Learning avancées."
+        "Actuellement étudiant en Master  Intelligence Artificielle et Big Data,"
+        " je dispose de compétences pratiques en Machine Learning, Deep Learning" 
+        "et déploiement de pipelines de données. Afin de valider mon diplôme,"
+        " je suis à la recherche d'un stage de fin d'études d'une durée de 6 mois."
     ),
     "photo_url": "",
 }
@@ -34,6 +34,7 @@ SKILLS = {
         "PostgreSQL",
         "MongoDB",
         "Talend",
+        "SQL",
         "Docker",
         "Databricks",
     ],
@@ -56,7 +57,7 @@ PROJECTS = [
     },
     {
         "title": "Traduction Automatique Neurale (English - French - Éwé)",
-        "stack": ["NLP", "NLLB-200", "LoRA", "re", "huggingface"],
+        "stack": ["NLP", "NLLB-200", "LoRA", "regex", "huggingface"],
         "description": (
             "Constitution d'un corpus de textes parallèles et fine-tuning de modèles de "
             "langages spécialisés. Évaluation des performances de traduction sur des "
@@ -68,15 +69,14 @@ PROJECTS = [
         "month": "Mai",
     },
     {
-        "title": "Analyseur de Sentiments & Extracteur de Données",
-        "stack": ["Tensorflow", "SpaCy", "Apache Tika"],
+        "title": "Extraction d'informations Clés à partir d'un CV",
+        "stack": ["SpaCy", "Apache Tika", "pandas", "regex"],
         "description": (
-            "Développement d'un pipeline d'analyse exploitant Tensorflow pour la "
-            "classification de sentiments. Création d'un outil de parsing automatisé "
-            "pour l'extraction structurée d'informations (noms, contacts) issues de "
-            "documents non formatés."
+            "Extraction d'informations à partir d'un CV "
+            "via la reconnaissance d'entités nommées (NER)."
+          
         ),
-        "link": "https://github.com/ulrich-droid/sentiment-parser",
+        "link": "https://github.com/ulrich-droid/resume_parser",
         "label": "Consulter le code source sur github",
         "year": 2026,
         "month": "Juillet",
@@ -106,6 +106,33 @@ PROJECTS = [
         "month": "Mai",
     },
     {
+        "title": "Social Media Sentiment Analysis",
+        "stack": ["regex", "pandas", "matplotlib", "seaborn", "nltk", "transformers", "torch", "tqdm", "wordcloud"],
+        "description": (
+            "Chargement d'un modèle pré-entraîné depuis Hugging Face (« RoBERTa »)"
+            " pour analyser les sentiments, et utilisation des stopwords de NLTK"
+            " pour nettoyer et trouver les mots les plus fréquents, suivie de la"
+            " représentation avec WordCloud."
+              
+        ),
+        "link": "https://github.com/ulrich-droid/Social-Media-Sentiment-Analysis",
+        "label": "Consulter le code source sur github",
+        "year": 2026,
+        "month": "Août",
+    },
+    {
+        "title": "Scraping des avis Trustpilot - Fortuneo",
+        "stack": ["selenium", "pandas", "sqlite3"],
+        "description": (
+            "Scraping à l'aide de Scrapy des commentaires sur un site"
+            " et stockage dans une base de données SQLite."
+        ),
+        "link": "https://github.com/ulrich-droid/Scraping-et-stockage-de-donn-es-web",
+        "label": "Consulter le code source sur github",
+        "year": 2026,
+        "month": "Août",
+    },
+    {
         "title": "Tableau de bord : Crimes de masse aux États-Unis",
         "stack": ["PowerBI"],
         "description": (
@@ -123,10 +150,12 @@ PROJECTS = [
 RECENT_PROJECTS = [
     "ExploreTogo : Pipeline Big Data & Streaming",
     "Traduction Automatique Neurale (English - French - Éwé)",
-    "Analyseur de Sentiments & Extracteur de Données",
+    "Extraction d'informations Clés à partir d'un CV",
     "Détection d'anomalies dans les transactions bancaires avec K-means",
     "Data Analyst IoT : Évaluation de la qualité des données, détection d'anomalies sur capteurs agricole",
+    "Social Media Sentiment Analysis",
     "Tableau de bord : Crimes de masse aux États-Unis",
+    "Scraping des avis Trustpilot - Fortuneo",
 ]
 
 CONTACT = {
