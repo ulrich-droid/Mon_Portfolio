@@ -81,6 +81,7 @@ PROJECTS = [
         "year": 2026,
         "month": "Juillet",
     },
+    
     {
         "title": "Détection d'anomalies dans les transactions bancaires avec K-means",
         "stack": ["scikit-learn", "matplotlib", "pandas","numpy"],
@@ -94,6 +95,7 @@ PROJECTS = [
         "year": 2026,
         "month": "Mai",
     },
+    
     {
         "title": "Data Analyst IoT : Évaluation de la qualité des données, détection d'anomalies sur capteurs agricole",
         "stack": ["seaborn", "matplotlib", "pandas", "numpy", "Folium"],
@@ -105,6 +107,7 @@ PROJECTS = [
         "year": 2026,
         "month": "Mai",
     },
+    
     {
         "title": "Social Media Sentiment Analysis",
         "stack": ["regex", "pandas", "matplotlib", "seaborn", "nltk", "transformers", "torch", "tqdm", "wordcloud"],
@@ -120,6 +123,7 @@ PROJECTS = [
         "year": 2026,
         "month": "Août",
     },
+    
     {
         "title": "Scraping des avis Trustpilot - Fortuneo",
         "stack": ["selenium", "pandas", "sqlite3"],
@@ -132,6 +136,7 @@ PROJECTS = [
         "year": 2026,
         "month": "Août",
     },
+    
     {
         "title": "Tableau de bord : Crimes de masse aux États-Unis",
         "stack": ["PowerBI"],
