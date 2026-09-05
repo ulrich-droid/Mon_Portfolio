@@ -122,8 +122,8 @@ def get_custom_css():
     .profile-frame img,
     [data-testid="stImage"] img {
         width: 100%;
-        max-width: 330px;
-        height: 340px;
+        max-width: 270px;
+        height: 290px;
         object-fit: cover;
         border-radius: 4px;
         border: 1px solid var(--line);
@@ -441,6 +441,48 @@ def get_custom_css():
     .contact-panel label {
         color: var(--text);
         font-weight: 600;
+    }
+
+    [data-testid="stTextInput"] input,
+    [data-testid="stTextArea"] textarea,
+    [data-testid="stForm"] input,
+    [data-testid="stForm"] textarea {
+        background-color: #111827 !important;
+        color: #f8fafc !important;
+        caret-color: #f8fafc !important;
+        border: 1px solid rgba(148, 163, 184, 0.55) !important;
+        border-radius: 8px !important;
+    }
+
+    [data-testid="stTextInput"] input::placeholder,
+    [data-testid="stTextArea"] textarea::placeholder,
+    [data-testid="stForm"] input::placeholder,
+    [data-testid="stForm"] textarea::placeholder {
+        color: #cbd5e1 !important;
+        opacity: 1 !important;
+    }
+
+    [data-testid="stTextInput"] input:focus,
+    [data-testid="stTextArea"] textarea:focus,
+    [data-testid="stForm"] input:focus,
+    [data-testid="stForm"] textarea:focus {
+        border-color: #7dd3fc !important;
+        box-shadow: 0 0 0 2px rgba(125, 211, 252, 0.22) !important;
+    }
+
+    [data-testid="stFormSubmitButton"] button,
+    [data-testid="stForm"] button[type="submit"] {
+        background: #2563eb !important;
+        color: #ffffff !important;
+        border: 1px solid #60a5fa !important;
+        font-weight: 700 !important;
+    }
+
+    [data-testid="stFormSubmitButton"] button:hover,
+    [data-testid="stForm"] button[type="submit"]:hover {
+        background: #1d4ed8 !important;
+        border-color: #93c5fd !important;
+        color: #ffffff !important;
     }
 
     .social-link {
