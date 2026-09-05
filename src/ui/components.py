@@ -55,7 +55,7 @@ def render_hero(profile, cv_data=None, cv_file_name="CV.pdf"):
 
 
 def render_skills(skills):
-    st.markdown('<div class="section-title">Expertise technique</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Compétences Techniques</div>', unsafe_allow_html=True)
 
     skill_items = list(skills.items())
     skill_columns = st.columns(2)

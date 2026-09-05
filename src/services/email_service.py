@@ -3,6 +3,8 @@ import smtplib
 from email.message import EmailMessage
 from pathlib import Path
 
+import streamlit as st
+
 
 def _load_dotenv_values():
     project_root = Path(__file__).resolve().parents[2]
@@ -23,15 +25,24 @@ def _load_dotenv_values():
 _load_dotenv_values()
 
 
+def _get_setting(name: str, default: str | None = None) -> str | None:
+    try:
+        secret_value = st.secrets.get(name)
+    except Exception:
+        secret_value = None
+
+    return str(secret_value) if secret_value is not None else os.getenv(name, default)
+
+
 def send_contact_email(name: str, email: str, message: str) -> tuple[bool, str]:
     """Send a contact message to the configured recipient email.
 
     Uses Gmail SMTP by default, and reads settings from environment variables or a .env file.
     """
-    host = os.getenv("SMTP_HOST", "smtp.gmail.com")
-    port = os.getenv("SMTP_PORT", "587")
-    username = os.getenv("SMTP_USERNAME") or os.getenv("SMTP_TO") or "ulricharegba@gmail.com"
-    password = os.getenv("SMTP_PASSWORD")
+    host = _get_setting("SMTP_HOST", "smtp.gmail.com")
+    port = _get_setting("SMTP_PORT", "587")
+    username = _get_setting("SMTP_USERNAME") or _get_setting("SMTP_TO") or "ulricharegba@gmail.com"
+    password = _get_setting("SMTP_PASSWORD")
     recipient = os.getenv("SMTP_TO") or os.getenv("CONTACT_EMAIL") or "ulricharegba@gmail.com"
 
     if not password:

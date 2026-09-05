@@ -40,12 +40,11 @@ def get_custom_css():
         padding-bottom: 3rem;
     }
 
-    [data-testid="stSidebarNav"] {
-        display: none;
-    }
-
-    [data-testid="stSidebar"] {
-        display: none;
+    [data-testid="stSidebar"],
+    [data-testid="stSidebarNav"],
+    [data-testid="stSidebarCollapseButton"],
+    [data-testid="stSidebarHeader"] {
+        display: none !important;
     }
 
     .hero-shell {

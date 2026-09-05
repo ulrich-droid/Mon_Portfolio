@@ -4,7 +4,11 @@ from collections import defaultdict
 from src.data.content import get_projects
 from src.ui.styles import get_custom_css
 
-st.set_page_config(page_title="Tous les projets", layout="wide")
+st.set_page_config(
+    page_title="Tous les projets",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 st.markdown(get_custom_css(), unsafe_allow_html=True)
 
 projects = get_projects()
